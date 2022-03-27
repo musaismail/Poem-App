@@ -1,0 +1,49 @@
+body {
+  background-color: #749627;
+  background-image: url(ismail.jpg);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#fetchbutton {
+  background-color: #ad343e;
+  padding: 5px 25px;
+  color: white;
+  font-size: 18px;
+  border: #333 1px solid;
+  border-radius: 5px;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+}
+#fetchbutton:hover {
+  background-color: #122622;
+}
+
+#fetchbutton:active {
+  background-color: #5f1d22;
+}
+
+#fetchbutton:focus {
+  border: 1px solid cornflowerblue;
+}
+
+.f{
+  background-color: #ad343e;
+  margin-left: 240px;
+  margin-right: 20px;
+  padding: 10px;
+  
+}
+
+.select{
+  border-radius: 6px;
+  background: #faeff0;
+  box-shadow: 0px 0px 12px #aaa, -0px -0px 12px #fff;
+  width: 300px;
+  margin: 0px 25px 0px 0px;
+  padding: 15px 15px 15px 15px;
+  font-size: 20px;
+}
