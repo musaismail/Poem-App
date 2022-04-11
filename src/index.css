@@ -1,49 +1,67 @@
+* {
+  box-sizing: border-box;
+  color: #333;
+}
 body {
-  background-color: #749627;
-  background-image: url(ismail.jpg);
+  background-image: linear-gradient(to bottom right, red, yellow);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-#fetchbutton {
-  background-color: #ad343e;
-  padding: 5px 25px;
-  color: white;
-  font-size: 18px;
-  border: #333 1px solid;
-  border-radius: 5px;
-  display: block;
-  margin: 0 auto;
-  cursor: pointer;
-}
-#fetchbutton:hover {
-  background-color: #122622;
-}
 
-#fetchbutton:active {
-  background-color: #5f1d22;
 }
-
-#fetchbutton:focus {
-  border: 1px solid cornflowerblue;
+.poem-list{
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0px 0px 12px #aaa, -0px -0px 12px #fff;
+  background: #E8C07D;
+  margin: 10%;
+  border: 2px solid goldenrod;
 }
-
-.f{
-  background-color: #ad343e;
-  margin-left: 240px;
-  margin-right: 20px;
-  padding: 10px;
-  
-}
-
 .select{
   border-radius: 6px;
-  background: #faeff0;
+  background: #F6F54D;
   box-shadow: 0px 0px 12px #aaa, -0px -0px 12px #fff;
-  width: 300px;
-  margin: 0px 25px 0px 0px;
-  padding: 15px 15px 15px 15px;
-  font-size: 20px;
+  width: 200px;
+  margin: 15px 5px 10px 3px;
+  padding: 10px;
+  font-size: 18px;
+  border: 2px solid goldenrod;
+}
+.poem-item{
+  border-radius: 6px;
+  background: #F6F54D;
+  box-shadow: 0px 0px 12px #aaa, -0px -0px 12px #fff;
+  padding: 15px;
+  margin:30px;
+  text-align: center;
+  border: 2px solid goldenrod;
+}
+.poem-list button, .poem-details button{
+  font-size: 18px;
+  border-radius: 6px;
+  border: 2px solid goldenrod;
+  padding: 10px;
+  background: #F6F54D;
+  box-shadow: 0px 0px 12px #aaa, -0px -0px 12px #fff;
+}
+button:hover{
+  background: rgb(218, 40, 188);
+}
+.poem-list button{
+  margin: 40px;
+  
+}
+.poem-details{
+  background-color: #FDD7AA;
+  margin: 10%;
+  padding-top: 15px;
+  border: 2px solid goldenrod;
+}
+.details-button, .table{
+  display: flex;
+  justify-content: center;
+  justify-content:space-around;
+  padding: 5px;
+  text-align: center;
 }

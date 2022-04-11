@@ -28,18 +28,20 @@ function PoemDetail() {
   };
 
   return (
-    <div>
-      <div className="p-5">
-        <button className="f addfavourite" onClick={addFavorite}>
+      <div className="poem-details">
+        <div className="details-button">
+        <button onClick={addFavorite}>
           Add to favourite
         </button>
-        <button className="f removefavourite" onClick={removeFavorite}>
+        <button onClick={removeFavorite}>
           Remove from favourite
         </button>
         <Link  to="/my-favorite">
-         <button className="f favourite"> Favourites</button>
+         <button > Favourite Poems !!!!!</button>
         </Link>
-        <table striped bordered hover>
+        </div>
+        <div className="table">
+        <table striped bordered hover >
           <tbody>
             <tr>
               <td>
@@ -53,7 +55,7 @@ function PoemDetail() {
               <td>
                 {poem.lines.map((lyric, index) => {
                   return (
-                    <p key={index} className="text-center">
+                    <p key={index} className="lyric">
                       {lyric}
                     </p>
                   );
@@ -63,7 +65,8 @@ function PoemDetail() {
           </tbody>
         </table>
       </div>
-    </div>
+      </div>
+    
   );
 }
 

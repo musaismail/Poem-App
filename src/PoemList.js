@@ -34,15 +34,15 @@ const PoemList = ()=> {
   
     };
 return(
-    <div> 
-        <button id="fetchbutton" onClick={handleClick}>Fetch Poem</button>
+    <div className="poem-list"> 
+        <button onClick={handleClick}>Fetch Poem</button>
        {Poems.length? (<select className="select" onChange={getSortingData}>
             <option>Select accordingly</option>
             <option value='title'>Title</option>
             <option value='author'>Author</option>
         </select>):('')}
         
-    <div>
+    <div className="poem-item">
         {Poems.map((item,index)=>{
             return <Poem key={index} item={item}/>
         })}
