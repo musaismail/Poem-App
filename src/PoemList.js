@@ -6,9 +6,7 @@ const PoemList = ()=> {
  
  
  
-   useEffect(()=>{
-     handleClick()
-    },[])
+  
   function handleClick(){
        fetch(`https://poetrydb.org/random/20`)
        .then(res=>{
