@@ -5,9 +5,7 @@ import Poem from "./Poem";
 const PoemList = ()=> {
    const[Poems, setPoem]= useState([]);
  
- 
- 
-   
+
   function handleClick(){
        fetch(`https://poetrydb.org/random/20`)
        .then(res=>{
