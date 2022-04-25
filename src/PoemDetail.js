@@ -28,31 +28,35 @@ function PoemDetail() {
   };
 
   return (
-      <div className="poem-details">
-        <div className="details-button">
-        <button onClick={addFavorite}>
+      <div className="w-full h-full">
+        <div className="flex items-center justify-between m-4">
+        <button className="text-center rounded-lg px-4 py-3  m-2 hover:bg-purple-800 hover:text-yellow-100 bg-yellow-500 border-2 border-blue-200 text-white font-bold text-lg shadow-md shadow-[#040c16]"
+         onClick={addFavorite}>
           Add to favourite
         </button>
-        <button onClick={removeFavorite}>
+        <button className="text-center rounded-lg px-4 py-3  m-2 hover:bg-purple-800 hover:text-yellow-100 bg-yellow-500 border-2 border-blue-200 text-white font-bold text-lg shadow-md shadow-[#040c16]"
+        onClick={removeFavorite}>
           Remove from favourite
         </button>
         <Link  to="/my-favorite">
-         <button > Favourite Poems !!!!!</button>
+         <button className="text-center rounded-lg px-4 py-3  m-2 hover:bg-purple-800 hover:text-yellow-100 bg-yellow-500 border-2 border-blue-200 text-white font-bold text-lg shadow-md shadow-[#040c16]" > 
+           Favourite Poems
+           </button>
         </Link>
         </div>
-        <div className="table">
+        <div className="flex items-center justify-center m-4 py-3 text-white font-bold text-2xl  ">
         <table striped bordered hover >
           <tbody>
             <tr>
               <td>
-                <h3>{poem.title}</h3>
+                <h3 className="text-4xl">{poem.title}</h3>
               </td>
             </tr>
             <tr>
-              <td> by: {poem.author}</td>
+              <td className="text-3xl"> by: {poem.author}</td>
             </tr>
-            <tr>
-              <td>
+            <tr className="py-3 m-4">
+              <td >
                 {poem.lines.map((lyric, index) => {
                   return (
                     <p key={index} className="lyric">
